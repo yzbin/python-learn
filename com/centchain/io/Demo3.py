@@ -7,7 +7,7 @@
 # @Software: PyCharm Community Edition
 
 import os
-print(os.name)  # 操作系统类型
+# print(os.name)  # 操作系统类型
 
 # 改方法只适用于linux系统
 # print(os.uname())  # 详细的系统信息
@@ -36,6 +36,17 @@ print(os.name)  # 操作系统类型
 
 # 同样的道理，要拆分路径时，也不要直接去拆字符串，而要通过os.path.split()函数，
 # 这样可以把一个路径拆分为两部分，后一部分总是最后级别的目录或文件名：
-print(os.path.split(r'C:\Users\admin\PycharmProjects\python-learn\com\centchain\io\a.txt'))
+# print(os.path.split(r'C:\Users\admin\PycharmProjects\python-learn\com\centchain\io\a.txt'))
 
-print("test")
+# print(os.path.split(r'C:\Users\admin\PycharmProjects\python-learn\com\centchain\io\a.txt')[1])
+
+# 对文件重命名:
+# os.rename('test.txt', 'test.py')
+
+# 删掉文件:
+os.remove('test.py')
+
+
+
+
+
