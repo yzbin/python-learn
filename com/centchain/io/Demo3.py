@@ -38,4 +38,4 @@ print(os.name)  # 操作系统类型
 # 这样可以把一个路径拆分为两部分，后一部分总是最后级别的目录或文件名：
 print(os.path.split(r'C:\Users\admin\PycharmProjects\python-learn\com\centchain\io\a.txt'))
 
-
+print("test")
