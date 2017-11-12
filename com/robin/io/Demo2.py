@@ -34,6 +34,14 @@
 # print(f.getvalue())
 
 # StringIO和BytesIO是在内存中操作str和bytes的方法，使得和读写文件具有一致的接口。
-from io import BytesIO
-f = BytesIO(b'\xe4\xb8\xad\xe6\x96\x87')
-print(f.read())
+# from io import BytesIO
+# f = BytesIO(b'\xe4\xb8\xad\xe6\x96\x87')
+# print(f.read())
+
+import pickle
+f = open('dump.txt', 'rb')
+d = pickle.load(f)
+f.close()
+print(d)
+
+
