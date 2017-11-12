@@ -11,7 +11,7 @@
 # 然后，通过操作系统提供的接口从这个文件对象中读取数据（读文件），或者把数据写入这个文件对象（写文件）。
 # try:
 #     f = open('a.txt', 'r')
-#     # f = open(r'\Users\admin\PycharmProjects\python-learn\com\centchain\io\a.txt', 'r')
+#     # f = open(r'\Users\admin\PycharmProjects\python-learn\com\robin\io\a.txt', 'r')
 #     print(f.read())
 # finally:
 #     if f:
