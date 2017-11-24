@@ -44,8 +44,7 @@ import os
 # os.rename('test.txt', 'test.py')
 
 # 删掉文件
-os.remove('test.py')
-
+# os.remove('test.py')
 
 
 
