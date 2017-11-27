@@ -198,18 +198,61 @@
 # 比如定义一个函数，包含上述若干种参数
 
 
-def f1(a, b, c=0, *args, **kw):
-    print('a=', a, 'b=', b, 'c=', c, 'args=', args, 'kw=', kw)
+# def f1(a, b, c=0, *args, **kw):
+#     print('a=', a, 'b=', b, 'c=', c, 'args=', args, 'kw=', kw)
+#
+#
+# def f2(a, b, c=0, *, d, **kw):
+#     print('a=', a, 'b=', b, 'c=', c, 'd=', d, 'kw=', kw)
+#
+#
+# print(f1(1, 2))
+# print(f1(1, 2, 3))
+# print(f1(1, 2, 3, 'a', 'b'))
+# print(f1(1, 2, 3, 'a', 'b', x=99))
 
 
-def f2(a, b, c=0, *, d, **kw):
-    print('a=', a, 'b=', b, 'c=', c, 'd=', d, 'kw=', kw)
+# def fact(n):
+#     if n == 1:
+#         return 1
+#     return n * fact(n-1)
+#
+#
+# print(fact(1))
+# print(fact(5))
+# print(fact(100))
+# print(fact(1000))
 
 
-print(f1(1, 2))
-print(f1(1, 2, 3))
-print(f1(1, 2, 3, 'a', 'b'))
-print(f1(1, 2, 3, 'a', 'b', x=99))
+def fact(n):
+    return fact_iter(n, 1)
+
+
+def fact_iter(num, product):
+    if num == 1:
+        return product
+    return fact_iter(num-1, num*product)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
