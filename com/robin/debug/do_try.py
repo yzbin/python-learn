@@ -36,28 +36,28 @@
 #         print('Error')
 #     else:
 #         pass
-<<<<<<< Updated upstream
-=======
-
-# 一旦出错，还要一级一级上报，直到某个函数可以处理该错误（比如，给用户输出一个错误信息）。
->>>>>>> Stashed changes
-# 所以高级语言通常都内置了一套try...except...finally...的错误处理机制，Python也不例外
-
-# try
+# <<<<<<< Updated upstream
+# =======
 #
-# 让我们用一个例子来看看try的机制
-
-try:
-    print('try...')
-    r = 10 / 0
-    print('result:', r)
-except ZeroDivisionError as e:
-    print('except:', e)
-finally:
-    print('finally...')
-print('END')
-
-<<<<<<< Updated upstream
+# # 一旦出错，还要一级一级上报，直到某个函数可以处理该错误（比如，给用户输出一个错误信息）。
+# >>>>>>> Stashed changes
+# # 所以高级语言通常都内置了一套try...except...finally...的错误处理机制，Python也不例外
+#
+# # try
+# #
+# # 让我们用一个例子来看看try的机制
+#
+# try:
+#     print('try...')
+#     r = 10 / 0
+#     print('result:', r)
+# except ZeroDivisionError as e:
+#     print('except:', e)
+# finally:
+#     print('finally...')
+# print('END')
+#
+# <<<<<<< Updated upstream
 # 当我们认为某些代码可能会出错时，就可以用try来运行这段代码，如果执行出错，则后续代码不会继续执行，
 # 而是直接跳转至错误处理代码，即except语句块，执行完except后，如果有finally语句块，则执行finally语句块，至此，执行完毕。
 #
@@ -99,13 +99,13 @@ print('END')
 
 # Python的错误其实也是class，所有的错误类型都继承自BaseException，
 # 所以在使用except时需要注意的是，它不但捕获该类型的错误，还把其子类也“一网打尽”。比如
-
-try:
-    foo()
-except ValueError as e:
-    print('ValueErrot')
-except UnicodeError as e:
-    print('UnicodeError')
+#
+# try:
+#     foo()
+# except ValueError as e:
+#     print('ValueErrot')
+# except UnicodeError as e:
+#     print('UnicodeError')
 
 
 # 第二个except永远也捕获不到UnicodeError，因为UnicodeError是ValueError的子类，如果有，也被第一个except给捕获了。
