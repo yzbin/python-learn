@@ -1,0 +1,17 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="com.exercise.week1.Demo7.fillcolor" />
+          <option value="com.exercise.week1.Demo7.begin_fill" />
+          <option value="com.exercise.week1.Demo7.*" />
+          <option value="com.robin.exercise.week1.Demo7.fillcolor" />
+          <option value="com.robin.exercise.week1.Demo7.*" />
+          <option value="com.robin.exercise.week1.Demo8.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
